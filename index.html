@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Görev Listesi Uygulaması</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="task-input">
+        <img src="bars-icon.svg" alt="icon" />
+        <input type="text" placeholder="Yeni bir görev ekle" />
+
+        <select id="priority">
+          <option value="" disabled selected hidden>Öncelik Seçiniz</option>
+          <option value="Düşük Öncelik">Düşük Öncelik</option>
+          <option value="Orta Öncelik">Orta Öncelik</option>
+          <option value="Yüksek Öncelik">Yüksek Öncelik</option>
+        </select>
+        <input type="date" id="dueDate" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">Tümü</span>
+          <span id="pending">Bekleyen</span>
+          <span id="completed">Tamamlanan</span>
+        </div>
+        <button class="clear-btn">Hepsini Temizle</button>
+        <button class="add-btn">Ekle</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
